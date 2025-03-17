@@ -1,0 +1,123 @@
+final List<Map<String, dynamic>> storeItems = [
+  {
+    'name': 'Leather Bag',
+    'price': 15.99,
+    'image': 'assets/images/leatherbag.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Pharaonic Dress',
+    'price': 29.99,
+    'image': 'assets/images/pharaonic dress.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Luxury Pharaonic Necklace',
+    'price': 45.99,
+    'image': 'assets/images/Luxury pharaonic necklace.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Gold Bracelet with Egyptian Motifs',
+    'price': 45.99,
+    'image': 'assets/images/gold bracelet with Egyptian motifs.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Elegant Gold Earrings',
+    'price': 45.99,
+    'image': 'assets/images/Elegant gold earrings.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Canvas Bags',
+    'price': 45.99,
+    'image': 'assets/images/canvas bags.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Pharaonic Design T-Shirts',
+    'price': 45.99,
+    'image': 'assets/images/pharaonic design t-shirts.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Necklaces Golden Pharaonic',
+    'price': 45.99,
+    'image': 'assets/images/Necklaces golden pharaonic.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Pharaonic Ceramic Mug',
+    'price': 45.99,
+    'image': 'assets/images/Pharaonic ceramic mug.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Egyptian Inspired Curtains',
+    'price': 45.99,
+    'image': 'assets/images/Egyptian inspired curtains.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Gold Necklace with Tutankhamun Head',
+    'price': 45.99,
+    'image': 'assets/images/Gold necklace with Tutankhamun head.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Gold Bracelet with Egyptian Engravings',
+    'price': 45.99,
+    'image': 'assets/images/Gold bracelet with Egyptian engravings.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Pharaonic Pillows',
+    'price': 45.99,
+    'image': 'assets/images/Pharaonic Pillows.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Mug with Pharaonic Design',
+    'price': 45.99,
+    'image': 'assets/images/Mug with pharaonic design.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Pharaonic Tote Bag',
+    'price': 45.99,
+    'image': 'assets/images/Pharaonic tote bag.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Pharaonic Hand Pouch',
+    'price': 45.99,
+    'image': 'assets/images/Pharaonic hand pouch.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'Pharaonic Gold Bracelet',
+    'price': 45.99,
+    'image': 'assets/images/Pharaonic gold bracelet.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'A Loose Fitting Dress with Wide Sleeves',
+    'price': 45.99,
+    'image': 'assets/images/A loose fitting dress with wide sleeves.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'A Small Sphinx Statue Inspired by Pharaonic Civilization',
+    'price': 45.99,
+    'image':
+        'assets/images/A small Sphinx statue inspired by Pharaonic civilization.jpg',
+    'quantity': 0,
+  },
+  {
+    'name': 'A Stylish Keychain Featuring the Eye of Horus',
+    'price': 45.99,
+    'image': 'assets/images/A stylish keychain featuring the Eye of Horus..jpg',
+    'quantity': 0,
+  },
+];
