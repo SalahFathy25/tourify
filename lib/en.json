@@ -1,0 +1,99 @@
+{
+    // about Page
+    "appName": "Tourify",
+    "Description1": "Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs.",
+    "ancient_wonder": "Ancient Wonders",
+    "Description2": "Explore the magnificent pyramids and ancient temples that have stood for thousands of years.",
+    "Modeen_egypt": "Modern Egypt",
+    "Description3": "Discover the vibrant cities, bustling markets, and rich culture of modern Egypt.",
+    
+    // ancient_wonders page
+    "book_now": "Book Now",
+    
+    // book_tickets page
+    "book_tickets": "Book Tickets",
+    "selected_packages": "Selected Packages:",
+    "select_travel_dates": "Select Travel Dates",
+    "date": "March 2025",
+    "select_duration": "Selected Duration:",
+    "from": "From:",
+    "to": "To:",
+    "select_time": "Select Time",
+    "selected_time": "Selected Time:",
+    "adult_tickets": "Adult Tickets (Seasonal pricing applies)",
+    "child_tickets": "Child Tickets (Seasonal pricing applies)",
+    "trip_info": "Trip Information",
+    "what's_Included": "What's Included:",
+    "guide_tour": "- Guided tours of ancient pyramids",
+    "local_egyptian": "- Local Egyptian cuisine experience",
+    "transportation": "- Transportation between sites",
+    "english_guide": "- Professional English-speaking guide",
+    "hitorical_sites": "- Entry fees to historical sites",
+    "important_notes": "Important Notes:",
+    "start_tour": "- Tours start at selected time",
+    "comfortable_walk": "- Comfortable walking shoes recommended",
+    "bring_things": "- Bring sunscreen and water",
+    "total_amount": "Total Amount:",
+    "select_valid_range": "Please select a valid date range.",
+    "order_success": "Your order has been successfully placed.",
+    "ok": "OK",
+    
+    // Cart Page
+    "cart": "Cart",
+    "empty_card": "Your cart is empty",
+    "total": "Total:",
+    "check_out": "Checkout",
+    "order_placed": "Order Placed!",
+    "confirm_for_delete_item": "Are you sure you want to delete this item?",
+    
+    // cultural_tourism_data  (محتاجه شغل كتير شوية)
+    
+    // Details Page
+    "highlights": "Highlights",
+    "gallery": "Gallery",
+    
+    // home page
+    "home_title": "Discover the Magic of Egypt",
+    "home_description": "Embark on a journey through time. Experience ancient wonders, rich culture, and unforgettable adventures in the land of the pharaohs.",
+    "explore_tours": "Explore Tours",
+    "profile": "Profile",
+    "store": "Store",
+    "videos": "Videos",
+    "tickets": "Tickets",
+    "log_out": "Log Out",
+    "search_results": "Search results for:",
+   
+    // modern_egypt_page  (الليست لسه)
+    "modern_egypt": "Modern Egypt",
+    
+    // profile page
+    "contact_info": "Contact Information",
+    "email_address": "Email Address",
+    "phone_number": "Phone Number",
+    "address": "Address",
+    "booking_history": "Booking History",
+    "profile_date": "Date:",
+   
+    // search page (Not List)
+    "search": "Search",
+    "search_products": "Search products...",
+    "price_range": "Price Range:",
+    
+    // SignIn Page
+    "sign_in": "SignIn",
+    "create_your_account": "Create Your Account",
+    "full_name": "Full Name",
+    "full_name_error": "Please enter your full name",
+    "email_address_error1": "Please enter your email address",
+    "email_address_error2": "Please enter a valid email address",
+    "password": "Password",
+    "password_address_error1": "Please enter a password",
+    "password_address_error2": "Password must be at least 6 characters",
+    "sign_up": "Sign Up",
+    "have_an_account": "Already have an account? Sign in",
+   
+    // Store Page
+    "search_item": "Search for an item",
+   
+    // Videos Page (Not List)
+}

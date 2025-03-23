@@ -15,18 +15,18 @@ class AboutPage extends StatelessWidget {
         title: Text(
           'Tourify',
           style: TextStyle(
-            fontSize: screenWidth * 0.06, // Responsive font size
+            fontSize: screenWidth * 0.06,
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
         ),
-        backgroundColor: Color(0xFF203A58), // Solid color for the app bar
+        backgroundColor: Color(0xFF203A58),
         elevation: 0, // Remove shadow
-        iconTheme: IconThemeData(color: Colors.white), // White back button
+        iconTheme: IconThemeData(color: Colors.white),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(screenWidth * 0.04), // Responsive padding
+          padding: EdgeInsets.all(screenWidth * 0.04),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -34,7 +34,7 @@ class AboutPage extends StatelessWidget {
               Text(
                 'Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs.',
                 style: TextStyle(
-                  fontSize: screenWidth * 0.045, // Responsive font size
+                  fontSize: screenWidth * 0.045,
                   color: Colors.grey[800],
                   height: 1.5,
                 ),
