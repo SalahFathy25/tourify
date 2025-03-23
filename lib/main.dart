@@ -11,7 +11,6 @@ import 'signup_page.dart';
 import 'about_page.dart';
 import 'app/provider/cart_model.dart';
 import 'videos_page.dart';
-//import 'videos_page.dart';
 
 void main() {
   runApp(
@@ -27,7 +26,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Tourify',
@@ -62,9 +60,9 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = [
     HomePage(),
     StorePage(),
+    VideosPage(),
     TicketBookingPage(type: "type", selectedPackages: [], totalPrice: 0.0),
     CartPage(),
-    VideosPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -185,16 +183,6 @@ class AppDrawer extends StatelessWidget {
                 context,
                 MaterialPageRoute(builder: (context) => CartPage()),
               );
-            },
-          ),
-          const Divider(),
-          // Log Out
-          ListTile(
-            leading: Icon(Icons.logout, color: Color(0xFF203A58)),
-            title: const Text("Log Out"),
-            onTap: () {
-              // Add logout logic here
-              Navigator.pop(context); // Close the drawer
             },
           ),
         ],

@@ -7,7 +7,7 @@ import 'book_tickets_page.dart';
 import 'cart_page.dart';
 import 'profile_page.dart';
 //import 'about_page.dart';
-//import 'videos_page.dart';
+import 'videos_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -97,7 +97,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       child: Text(
-                        'Explore More',
+                        'Explore Tours',
                         style: TextStyle(
                           fontSize: screenWidth * 0.045, // Responsive font size
                         ),
@@ -229,17 +229,17 @@ class AppDrawer extends StatelessWidget {
               );
             },
           ),
-          // ListTile(
-          //   leading: Icon(Icons.video_library, color: Color(0xFF203A58)),
-          //   title: const Text("Videos"),
-          //   onTap: () {
-          //     Navigator.pop(context); // Close the drawer
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(builder: (context) => VideosPage()),
-          //     );
-          //   },
-          // ),
+          ListTile(
+            leading: Icon(Icons.video_library, color: Color(0xFF203A58)),
+            title: const Text("Videos"),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => VideosPage()),
+              );
+            },
+          ),
           // Tickets
           ListTile(
             leading: Icon(Icons.confirmation_number, color: Color(0xFF203A58)),

@@ -13,15 +13,11 @@ class ProfilePage extends StatelessWidget {
         'date': '2023-10-01',
         'description': 'Ancient Egyptian Heritage Tour',
         'amount': 99.99,
-        'image':
-            'https://images.unsplash.com/photo-1623656127166-3675dd9aae5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWd5cHRpYW4lMjBoZXJpdGFnZSUyMHRvdXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
       },
       {
         'date': '2023-09-15',
         'description': 'Nile River Cruise',
         'amount': 149.99,
-        'image':
-            'https://images.unsplash.com/photo-1623656127166-3675dd9aae5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmlsZSUyMHJpdmVyJTIwY3J1aXNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
       },
       // Add more bookings here
     ],
@@ -159,39 +155,6 @@ class ProfilePage extends StatelessWidget {
                   margin: EdgeInsets.symmetric(
                       vertical: screenHeight * 0.01), // Responsive margin
                   child: ListTile(
-                    leading: SizedBox(
-                      width: screenWidth * 0.15, // Fixed width
-                      height: screenWidth * 0.15, // Fixed height
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8),
-                        child: Image.network(
-                          booking['image'],
-                          fit: BoxFit.cover, // Ensure the image covers the area
-                          loadingBuilder: (context, child, loadingProgress) {
-                            if (loadingProgress == null) return child;
-                            return Center(
-                              child: CircularProgressIndicator(
-                                value: loadingProgress.expectedTotalBytes !=
-                                        null
-                                    ? loadingProgress.cumulativeBytesLoaded /
-                                        loadingProgress.expectedTotalBytes!
-                                    : null,
-                              ),
-                            );
-                          },
-                          errorBuilder: (context, error, stackTrace) {
-                            // Fallback widget if the image fails to load
-                            return Container(
-                              color: Colors.grey[300],
-                              child: Icon(
-                                Icons.broken_image,
-                                color: Colors.grey[600],
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                    ),
                     title: Text(
                       booking['description'],
                       style: TextStyle(

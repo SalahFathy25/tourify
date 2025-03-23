@@ -1,0 +1,2 @@
+C:/Users/COMPUMARTS/Desktop/tourify/tourify/android/app/.cxx/Debug/2i2r2p2c/x86/CMakeFiles/edit_cache.dir
+C:/Users/COMPUMARTS/Desktop/tourify/tourify/android/app/.cxx/Debug/2i2r2p2c/x86/CMakeFiles/rebuild_cache.dir

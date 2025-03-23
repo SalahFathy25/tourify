@@ -4,14 +4,14 @@ import 'package:intl/intl.dart';
 
 class TicketBookingPage extends StatefulWidget {
   final String? type;
-  final List<Map<String, String>> selectedPackages; // Add this parameter
-  final double totalPrice; // Add this parameter
+  final List<Map<String, String>> selectedPackages;
+  final double totalPrice;
 
   const TicketBookingPage({
     super.key,
     required this.type,
-    required this.selectedPackages, // Add this parameter
-    required this.totalPrice, // Add this parameter
+    required this.selectedPackages,
+    required this.totalPrice,
   });
 
   @override
@@ -34,7 +34,7 @@ class _TicketBookingPageState extends State<TicketBookingPage> {
   double get _totalAmount {
     return (_adultTickets * _adultTicketPrice) +
         (_childTickets * _childTicketPrice) +
-        widget.totalPrice; // Include the total price of selected packages
+        widget.totalPrice;
   }
 
   @override
@@ -52,7 +52,7 @@ class _TicketBookingPageState extends State<TicketBookingPage> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () {
-            Navigator.pop(context); // Go back to the previous page
+            Navigator.pop(context);
           },
         ),
         backgroundColor: Color(0xFF203A58),
@@ -64,7 +64,7 @@ class _TicketBookingPageState extends State<TicketBookingPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Display Selected Packages
+              // Selected Packages
               Text(
                 'Selected Packages:',
                 style: TextStyle(
@@ -110,7 +110,6 @@ class _TicketBookingPageState extends State<TicketBookingPage> {
                 style: TextStyle(fontSize: 18, color: Color(0xFF203A58)),
               ),
               SizedBox(height: 8),
-              // TableCalendar Widget with Range Selection
               Card(
                 elevation: 10,
                 shape: RoundedRectangleBorder(
@@ -210,7 +209,7 @@ class _TicketBookingPageState extends State<TicketBookingPage> {
               ),
               SizedBox(height: 20),
 
-              // Display Selected Duration
+              // Selected Duration
               if (_startDate != null && _endDate != null)
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -280,7 +279,7 @@ class _TicketBookingPageState extends State<TicketBookingPage> {
               ),
               SizedBox(height: 20),
 
-              // Adult Tickets Selection
+              // Adult Tickets
               Text(
                 'Adult Tickets (Seasonal pricing applies)',
                 style: TextStyle(
@@ -321,7 +320,7 @@ class _TicketBookingPageState extends State<TicketBookingPage> {
               ),
               SizedBox(height: 20),
 
-              // Child Tickets Selection
+              // Child Tickets
               Text(
                 'Child Tickets (Seasonal pricing applies)',
                 style: TextStyle(
@@ -478,10 +477,7 @@ class _TicketBookingPageState extends State<TicketBookingPage> {
                         ),
                       );
                     } else {
-                      // Handle booking logic
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text('Booking successful!')),
-                      );
+                      _showOrderConfirmationDialog(context);
                     }
                   },
                   style: ElevatedButton.styleFrom(
@@ -502,6 +498,35 @@ class _TicketBookingPageState extends State<TicketBookingPage> {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  void _showOrderConfirmationDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        title: Text('Order Placed!', textAlign: TextAlign.center),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.check_circle, color: Colors.green, size: 60),
+            SizedBox(height: 10),
+            Text('Your order has been successfully placed.',
+                textAlign: TextAlign.center),
+          ],
+        ),
+        actions: [
+          Center(
+            child: TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('OK', style: TextStyle(fontSize: 16)),
+            ),
+          ),
+        ],
       ),
     );
   }
